@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.bradyrussell.apijar.runtime.annotations","l":"ApiClassAnnotation"},{"p":"com.bradyrussell.apijar.runtime","l":"ApiJarPlugin"},{"p":"com.bradyrussell.apijar.runtime.annotations","l":"ApiMethodAnnotation"}];updateSearchResults();
