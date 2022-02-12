@@ -4,7 +4,7 @@ plugins {
     id 'signing'
 }
 
-group 'com.bradyrussell.apijar.runtime'
+group 'com.bradyrussell'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -45,7 +45,7 @@ java {
     withSourcesJar()
 
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
+        languageVersion.set(JavaLanguageVersion.of(11))
     }
 }
 
