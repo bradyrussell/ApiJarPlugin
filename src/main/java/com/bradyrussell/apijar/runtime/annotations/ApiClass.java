@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface ApiClassAnnotation {
+public @interface ApiClass {
     /**
      * The Api Class portion of the path.
      * Paths are built like so:
