@@ -1,12 +1,29 @@
 package com.bradyrussell.apijar.runtime;
 
+import java.util.HashMap;
+
 public interface ApiJarPlugin {
     String getName();
-    String getDescription();
-    long getVersion();
+    default String getDescription() {
+        return "An ApiJar plugin called "+ getName() +".";
+    }
+    default long getVersion() {
+        return 1;
+    }
     default long getInitializeOrder() {
         return 1;
     }
-    boolean initialize();
-    void shutdown();
+    default boolean initialize() {
+        return true;
+    }
+    default void shutdown() {
+
+    }
+    default ApiJarConfiguration getConfiguration() {
+        return getConfiguration(getName());
+    }
+    HashMap<String, ApiJarConfiguration> configuration = new HashMap<>();
+    static ApiJarConfiguration getConfiguration(String pluginName) {
+        return configuration.get(pluginName);
+    }
 }
