@@ -4,6 +4,9 @@ import java.util.HashMap;
 
 public interface ApiJarPlugin {
     String getName();
+    default String getPath() {
+        return getName();
+    }
     default String getDescription() {
         return "An ApiJar plugin called "+ getName() +".";
     }
