@@ -29,4 +29,8 @@ public interface ApiJarPlugin {
     static ApiJarConfiguration getConfiguration(String pluginName) {
         return configuration.get(pluginName);
     }
+    HashMap<String, ApiJarCache> cache = new HashMap<>();
+    static ApiJarCache getCache(String pluginName) {
+        return cache.get(pluginName);
+    }
 }
