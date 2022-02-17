@@ -18,7 +18,7 @@ public @interface ApiMethod {
     String path() default ""; // a/b/c
     /**
      * The name of this Api Method. Defaults to the Java method name.
-     * @return The name of this Api Class.
+     * @return The name of this Api Method.
      */
     String name() default ""; // testMethod
 
