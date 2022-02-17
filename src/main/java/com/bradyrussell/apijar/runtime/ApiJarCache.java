@@ -7,4 +7,5 @@ public interface ApiJarCache {
     void set(String key, String value);
     boolean has(String key);
     List<String> keys();
+    String getOrDefault(String key, String ifNotFound, boolean cacheDefaultIfNotFound);
 }
